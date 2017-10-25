@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Emmet</h1>
+		<p>The essential toolkit for web-developers</p>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Emmet</h2>
+		<p><a href="https://twitter.com/mrinat/">Rinat Mullayanov</a></p>
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Quick Demo</h2>
+		<video width="400" src="pictures/emmet-demo.mp4" controls></video>
+	</section>
+
+	<section class="slide">
+		<h2>Sibling: +</h2>
+		<pre>
+			<code>div+p+bq</code>
+		</pre>
+		<pre>
+			<code>&lt;div&gt;&lt;/div&gt;</code>
+			<code>&lt;p&gt;&lt;/p&gt;</code>
+			<code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Multiplication: *</h2>
+		<pre>
+			<code>ul>li*3</code>
+		</pre>
+		<pre>
+			<code>&lt;ul&gt;</code>
+			<code>	&lt;li&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;/li&gt;</code>
+			<code>&lt;/ul&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Grouping: ()</h2>
+		<pre>
+			<code>(ul>li*2>a)+footer</code>
+		</pre>
+		<pre>
+			<code>&lt;ul&gt;</code>
+			<code>	&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;</code>
+			<code>	&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;</code>
+			<code>&lt;/ul&gt;</code>
+			<code>&lt;footer&gt;</code>
+			<code>&lt;/footer&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>ID and CLASS</h2>
+		<pre>
+			<code>div#header+div.page+div#footer.class1.class2.class3</code>
+		</pre>
+		<pre>
+			<code>&lt;div id=&quot;header&quot;&gt;&lt;/div&gt;</code>
+			<code>&lt;div class=&quot;page&quot;&gt;&lt;/div&gt;</code>
+			<code>&lt;div id=&quot;footer&quot; class=&quot;class1 class2 class3&quot;&gt;&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Custom attributes</h2>
+		<pre>
+			<code>td[title="Hello world!" colspan=3]</code>
+		</pre>
+		<pre>
+			<code>&lt;td title=&quot;Hello world!&quot; colspan=&quot;3&quot;&gt;&lt;/td&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Item numbering: $</h2>
+		<pre>
+			<code>ul>li.item$*5</code>
+		</pre>
+		<pre>
+			<code>&lt;ul&gt;</code>
+			<code>	&lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;</code>
+			<code>	&lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;</code>
+			<code>	&lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;</code>
+			<code>	&lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;</code>
+			<code>	&lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;</code>
+			<code>&lt;/ul&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Text: {}</h2>
+		<pre>
+			<code>a{Click me}</code>
+		</pre>
+		<pre>
+			<code>&lt;a href=&quot;&quot;&gt;Click me&lt;/a&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/emmet.png" alt="Emmet logo">
+			<a href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a>
+		</h2>
+		<style>
+			#see-more h2 {
+				font-size:100px
+				}
+			#see-more img {
+				width:0.72em;
+				height:0.72em;
+				}
+		</style>
+	</section>
+
+	<footer class="badge">
+		<a href="https://github.com/RinatMullayanov/shower">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
